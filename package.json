@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "cypress": "^13.6.0"
+  },
+  "name": "practice-cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

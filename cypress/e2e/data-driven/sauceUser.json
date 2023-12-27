@@ -1,0 +1,29 @@
+[
+    {
+        "name": "should login to inventory page",
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "expected": "Products"
+    },
+
+    {
+        "name": "should display locked out message",
+        "username": "locked_out_user",
+        "password": "secret_sauce",
+        "expected": "Products"
+    },
+
+    {
+        "name": "should display incorrect username message",
+        "username": "incorrectUser",
+        "password": "secret_sauce",
+        "expected": "Products"
+    },
+
+    {
+        "name": "should display incorrect password message",
+        "username": "standard_user",
+        "password": "incorrectPassword",
+        "expected": "Products"
+    }
+]
