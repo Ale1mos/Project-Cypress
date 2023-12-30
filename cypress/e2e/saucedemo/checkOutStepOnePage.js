@@ -3,7 +3,8 @@ class checkOutStepOnePage {
         firstNameInput : () => cy.get("form").find('input').eq(0),
         lastNameInput : () => cy.get("form").find('input').eq(1),
         postalCodeInput : () => cy.get("form").find('input').eq(2),
-        continueBtn : () => cy.get('#continue')
+        continueBtn : () => cy.get('#continue'),
+        cancelBtn : () => cy.get('[data-test="cancel"]')
     }
 
     fillFirstName(firstname){
@@ -20,6 +21,10 @@ class checkOutStepOnePage {
 
     clickContinue(){
         this.elements.continueBtn().click();
+    }
+
+    clickCancel(){
+        this.elements.cancelBtn().click();
     }
 }
 
