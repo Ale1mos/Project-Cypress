@@ -10,20 +10,20 @@
         "name": "should display locked out message",
         "username": "locked_out_user",
         "password": "secret_sauce",
-        "expected": "Products"
+        "expected": "Epic sadface: Sorry, this user has been locked out."
     },
 
     {
         "name": "should display incorrect username message",
         "username": "incorrectUser",
         "password": "secret_sauce",
-        "expected": "Products"
+        "expected": "Epic sadface: Username and password do not match any user in this service"
     },
 
     {
         "name": "should display incorrect password message",
         "username": "standard_user",
         "password": "incorrectPassword",
-        "expected": "Products"
+        "expected": "Epic sadface: Username and password do not match any user in this service"
     }
 ]

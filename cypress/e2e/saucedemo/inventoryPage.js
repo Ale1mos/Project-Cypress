@@ -3,7 +3,8 @@ class inventoryPage{
         titleSpan : () => cy.get('.title'),
         addFirstProduct : () => cy.get('#add-to-cart-sauce-labs-backpack'),
         addSecondProduct : () => cy.get('button[name = "add-to-cart-test.allthethings()-t-shirt-(red)"]'),
-        goToCart : () => cy.get('.shopping_cart_link')
+        goToCart : () => cy.get('.shopping_cart_link'),
+        burgerBtn : () => cy.get('#react-burger-menu-btn')
     }
 
     clickAddProduct(){

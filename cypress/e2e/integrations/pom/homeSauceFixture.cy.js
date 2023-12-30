@@ -17,7 +17,7 @@ describe('home sauce demo',()=>{
 
             if(test.name === 'should login to inventory page'){
                 inventoryPage.elements.titleSpan().should('have.text' , test.expected)
-            }else{
+            } else {
                 homeSaucePage.elements.errorMessage().should('have.text', test.expected)
             }
         })
