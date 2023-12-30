@@ -10,15 +10,16 @@ describe('POM Implementation' , () => {
     beforeEach(()=>{
         cy.visit('https://www.saucedemo.com/')
     })
-    // cy.log('1a')
+
+    it('check contents',() =>{
+        homeSaucePage.elements.formLogin().find('input').should('have.length','3');
+    })
 
     it('should login to inventory page',() =>{
         homeSaucePage.typeUsername('standard_user')
         homeSaucePage.typePassword('secret_sauce')
         homeSaucePage.clickLogin();
-        
-        // cy.log('1a')
-
+        cy.location("pathname").should("equal", "/inventory.html");
         inventoryPage.elements.titleSpan().should('have.text', 'Products')
     })
 

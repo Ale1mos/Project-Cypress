@@ -1,8 +1,8 @@
 class checkOutStepOnePage {
     elements = {
-        firstNameInput : () => cy.get('#first-name'),
-        lastNameInput : () => cy.get('#last-name'),
-        postalCodeInput : () => cy.get('#postal-code'),
+        firstNameInput : () => cy.get("form").find('input').eq(0),
+        lastNameInput : () => cy.get("form").find('input').eq(1),
+        postalCodeInput : () => cy.get("form").find('input').eq(2),
         continueBtn : () => cy.get('#continue')
     }
 

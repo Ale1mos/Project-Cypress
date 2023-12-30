@@ -1,5 +1,6 @@
 class homeSaucePage{
     elements ={
+        formLogin: () => cy.get('form'),
         usernameInput: () => cy.get('#user-name'),
         passwordInput: () => cy.get('#password'),
         loginBtn: () => cy.get('#login-button'),
